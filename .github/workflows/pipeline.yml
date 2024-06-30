@@ -45,8 +45,10 @@ jobs:
       working-directory: library
     - name: Install playwright
       run: npx playwright install
+      working-directory: library
     - name: Run the app
       run: npm run start &
+      working-directory: library
     - name: Run UI tests
       run: npm run test:ui
       working-directory: library
