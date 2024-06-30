@@ -19,7 +19,10 @@ jobs:
         cache: 'npm'
     - name: Install dependencies
       run: npm install
+      working-directory: library
     - name: Run unit tests
       run: npm run test:unit
+      working-directory: library
     - name: Display softuni username
       run: echo 'vikix'
+      working-directory: library
